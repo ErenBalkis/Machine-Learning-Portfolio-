@@ -47,4 +47,4 @@ Bu notebook içerisinde aşağıdaki veri bilimi adımları uygulanmıştır:
 Sorularınız veya geri bildirimleriniz için bana ulaşabilirsiniz.
 
 * **GitHub:** [ErenBalkis](https://github.com/ErenBalkis)
-* **LinkedIn:** linkedin.com/eren-balkis
+* **LinkedIn:** [ErenBalkis](https://linkedin.com/in/eren-balkis)
