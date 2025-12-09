@@ -1,50 +1,50 @@
 # Machine Learning Portfolio 🚀
 
-Bu depo, makine öğrenmesi algoritmalarını öğrenme yolculuğumda geliştirdiğim projeleri, yaptığım analizleri ve kod uygulamalarını içermektedir. Teorik bilgileri pratiğe dökmek ve "Hands-on" (uygulamalı) tecrübe kazanmak amacıyla oluşturulmuştur.
+This repository documents my learning journey in machine learning, containing projects, data analysis, and code implementations. It is designed to bridge the gap between theoretical knowledge and practical "hands-on" experience.
 
-## 📂 Depo Yapısı
+## 📂 Repository Structure
 
-Projeler, makine öğrenmesi alt alanlarına göre kategorize edilmiştir:
+Projects are categorized by machine learning subfields:
 
-* **01_Supervised_Learning:** Gözetimli öğrenme algoritmaları (Classification, Regression vb.)
-* *(Gelecek)* **02_Unsupervised_Learning:** Gözetimsiz öğrenme (Clustering vb.)
+* **01_Supervised_Learning:** Supervised learning algorithms (Classification, Regression, etc.)
+* *(Upcoming)* **02_Unsupervised_Learning:** Unsupervised learning (Clustering, etc.)
 
 ---
 
-## 🔬 Öne Çıkan Proje: Breast Cancer Classification with k-NN
+## 🔬 Featured Project: Breast Cancer Classification with k-NN
 
-Şu anda bu depodaki ilk proje, tıbbi bir teşhis problemini ele alan **Meme Kanseri Sınıflandırma** çalışmasıdır.
+This is the first project in this portfolio, addressing a medical diagnostic problem: **Breast Cancer Classification**.
 
-🔗 **Projeyi İncele:** [01_KNN_Breast_Cancer_Classification.ipynb](./01_Supervised_Learning/01_KNN_Breast_Cancer_Classification.ipynb)
+🔗 **View Project:** [01_KNN_Breast_Cancer_Classification.ipynb](./01_Supervised_Learning/01_KNN_Breast_Cancer_Classification.ipynb)
 
-### 📌 Proje Özeti
-Bu çalışmanın amacı, **Wisconsin Breast Cancer Dataset** verilerini kullanarak tümörlerin **Malignant** (Kötü Huylu) veya **Benign** (İyi Huylu) olup olmadığını tahmin eden bir makine öğrenmesi modeli geliştirmektir.
+### 📌 Project Summary
+The goal of this project is to develop a machine learning model to predict whether a tumor is **Malignant** or **Benign** using the **Wisconsin Breast Cancer Dataset**.
 
-### 🛠️ Kullanılan Teknolojiler ve Kütüphaneler
-* **Dil:** Python 3.x
-* **Veri Analizi:** Pandas, NumPy
-* **Görselleştirme:** Matplotlib, Seaborn
-* **Makine Öğrenmesi:** Scikit-learn (sklearn)
+### 🛠️ Technologies & Libraries Used
+* **Language:** Python 3.x
+* **Data Analysis:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Machine Learning:** Scikit-learn (sklearn)
 
-### 📊 Proje Adımları
-Bu notebook içerisinde aşağıdaki veri bilimi adımları uygulanmıştır:
+### 📊 Project Steps
+The following data science steps were implemented in this notebook:
 
-1.  **Exploratory Data Analysis (EDA):** Veri setinin dengesi, eksik veriler ve özellikler arasındaki korelasyonlar (Heatmap) incelendi.
+1.  **Exploratory Data Analysis (EDA):** Analyzed class balance, missing values, and feature correlations (Heatmap).
 2.  **Data Preprocessing:**
-    * Veri seti Eğitim (%80) ve Test (%20) olarak ayrıldı (`stratify` kullanılarak).
-    * k-NN uzaklık temelli bir algoritma olduğu için **StandardScaler** ile özellik ölçeklendirmesi yapıldı.
+    * Split the dataset into Training (80%) and Test (20%) sets (using `stratify`).
+    * Applied **StandardScaler** for feature scaling, as k-NN is a distance-based algorithm.
 3.  **Model Training & Tuning:**
-    * **k-Nearest Neighbors (k-NN)** algoritması kullanıldı.
-    * En iyi sonucu veren 'k' komşu sayısını bulmak için 1'den 20'ye kadar değerler denenerek bir hiperparametre optimizasyonu yapıldı.
+    * Implemented the **k-Nearest Neighbors (k-NN)** algorithm.
+    * Performed hyperparameter optimization by testing values from 1 to 20 to find the optimal 'k' neighbors.
 4.  **Evaluation:**
-    * Modelin başarısı **Confusion Matrix** ve **Classification Report** ile ölçüldü.
-    * Tıbbi bir konu olduğu için sadece doğruluğa (Accuracy) değil, gözden kaçan kanserli vakaları minimize etmek için **Recall** değerlerine odaklanıldı.
+    * Evaluated model performance using **Confusion Matrix** and **Classification Report**.
+    * Focused on **Recall** score (alongside Accuracy) to minimize false negatives (missed cancer cases), which is critical in medical diagnostics.
 
 ---
 
-## 📬 İletişim
+## 📬 Contact
 
-Sorularınız veya geri bildirimleriniz için bana ulaşabilirsiniz.
+Feel free to reach out for questions or feedback.
 
 * **GitHub:** [ErenBalkis](https://github.com/ErenBalkis)
 * **LinkedIn:** [ErenBalkis](https://linkedin.com/in/eren-balkis)
